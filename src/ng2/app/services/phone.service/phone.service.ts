@@ -3,9 +3,7 @@ import { Observable } from "rxjs";
 import { HttpClient } from "@angular/common/http";
 import { IPhoneData } from "../../interfaces/IPhoneData";
 
-// declare var angular: angular.IAngularStatic;
-// the guide said to use angular.IAngularStatic
-declare var angular: any;
+declare var angular: angular.IAngularStatic;
 import { downgradeInjectable } from '@angular/upgrade/static';
 
 @Injectable()
