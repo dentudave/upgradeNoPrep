@@ -44,12 +44,12 @@
     }, 
     "id": "dell-venue", 
     "images": [
-        "img/phones/dell-venue.0.jpg", 
-        "img/phones/dell-venue.1.jpg", 
-        "img/phones/dell-venue.2.jpg", 
-        "img/phones/dell-venue.3.jpg", 
-        "img/phones/dell-venue.4.jpg", 
-        "img/phones/dell-venue.5.jpg"
+        "ng1/img/phones/dell-venue.0.jpg", 
+        "ng1/img/phones/dell-venue.1.jpg", 
+        "ng1/img/phones/dell-venue.2.jpg", 
+        "ng1/img/phones/dell-venue.3.jpg", 
+        "ng1/img/phones/dell-venue.4.jpg", 
+        "ng1/img/phones/dell-venue.5.jpg"
     ], 
     "name": "Dell Venue", 
     "sizeAndWeight": {
