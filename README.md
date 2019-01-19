@@ -2,6 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.6.
 
+## Initial Setup
+
+The angular phonecat project was imported into the ng1 folder, it needs bower components placed in the `lib` directory.  The most effective
+way of getting them is to clone the angular phonecat project, run `npm install` followed by `npm start`.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
