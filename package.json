@@ -7,7 +7,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "npm run copy-libs",
+    "copy-libs": "cpx \"node_modules/{angular,angular-*,bootstrap/dist,jquery/dist}/**/*\" src/ng1/lib -C"
   },
   "private": true,
   "dependencies": {
@@ -23,7 +25,13 @@
     "@angular/upgrade": "^7.2.1",
     "core-js": "^2.5.4",
     "rxjs": "~6.3.3",
-    "zone.js": "~0.8.26"
+    "zone.js": "~0.8.26",
+    "angular": "1.7.x",
+    "angular-animate": "1.7.x",
+    "angular-resource": "1.7.x",
+    "angular-route": "1.7.x",
+    "bootstrap": "3.3.x",
+    "jquery": "3.3.x"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.10.0",
@@ -51,6 +59,7 @@
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
-    "typescript": "~3.1.6"
+    "typescript": "~3.1.6",
+    "cpx": "^1.5.0"
   }
 }
