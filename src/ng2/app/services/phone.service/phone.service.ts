@@ -3,21 +3,20 @@ import { Observable } from "rxjs";
 import { HttpClient } from "@angular/common/http";
 import { IPhoneData } from "../../interfaces/IPhoneData";
 
-// declare var angular: angular.IAngularStatic;
-declare var angular: any;
+declare var angular: angular.IAngularStatic;
 
 import { downgradeInjectable } from '@angular/upgrade/static';
 
 @Injectable()
 export class Phone {
   constructor(private http: HttpClient) { }
-  query(): Observable<IPhoneData[]> {
-    return this.http.get<IPhoneData[]>(`phones/phones.json`);
+  query(): Promise<IPhoneData[]> {
+    return this.http.get<IPhoneData[]>(`ng1/phones/phones.json`).toPromise();
   }
-  get(id: string): Observable<IPhoneData> {
-    return this.http.get<IPhoneData>(`phones/${id}.json`);
+  get(id: string): Promise<IPhoneData> {
+    return this.http.get<IPhoneData>(`phones/${id}.json`).toPromise();
   }
 }
 
 angular.module('core.phone')
-  .factory('phone', downgradeInjectable(Phone));
+  .factory('Phone', downgradeInjectable(Phone) as any);
