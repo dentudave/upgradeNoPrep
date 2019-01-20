@@ -30,7 +30,23 @@
             "styles": [
               "src/ng2/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/ng1/lib/jquery/dist/jquery.js",
+              "src/ng1/lib/angular/angular.js",
+              "src/ng1/lib/angular-animate/angular-animate.js",
+              "src/ng1/lib/angular-resource/angular-resource.js",
+              "src/ng1/lib/angular-route/angular-route.js",
+              "src/ng1/app.module.js",
+              "src/ng1/app.config.js",
+              "src/ng1/app.animations.js",
+              "src/ng1/core/core.module.js",
+              "src/ng1/core/checkmark/checkmark.filter.js",
+              "src/ng1/core/phone/phone.module.js",
+              "src/ng1/phone-list/phone-list.module.js",
+              "src/ng1/phone-list/phone-list.component.js",
+              "src/ng1/phone-detail/phone-detail.module.js",
+              "src/ng1/phone-detail/phone-detail.component.js"
+            ]
           },
           "configurations": {
             "production": {
