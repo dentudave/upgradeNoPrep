@@ -3,7 +3,7 @@ import { Observable } from "rxjs";
 import { HttpClient } from "@angular/common/http";
 import { IPhoneData } from "../../interfaces/IPhoneData";
 
-declare var angular: angular.IAngularStatic;
+import * as angular from "angular";
 
 import { downgradeInjectable } from '@angular/upgrade/static';
 
