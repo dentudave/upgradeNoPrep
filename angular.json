@@ -28,7 +28,10 @@
               "src/ng1"
             ],
             "styles": [
-              "src/ng2/styles.scss"
+              "src/ng2/styles.scss",
+              "src/ng1/lib/bootstrap/dist/css/bootstrap.css",
+              "src/ng1/app.css",
+              "src/ng1/app.animations.css"
             ],
             "scripts": [
               "src/ng1/lib/jquery/dist/jquery.js",
